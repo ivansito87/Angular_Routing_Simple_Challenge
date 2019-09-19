@@ -1,0 +1,20 @@
+<h1>Welcome [NAME]</h1>
+<ul>
+  <li *ngFor="let archive of archives">
+    <button type="button" mdbBtn color="primary" [routerLink]="['/archive', archive.year, archive.month]" mdbWavesEffect>{{archive.year + "/" + archive.month}}</button>
+<!--    <a [routerLink]="['/archive', archive.year, archive.month]" >{{archive.year + "/" + archive.month}}</a>-->
+  </li>
+</ul>
+<mdb-card>
+  <mdb-card-body>
+    <mdb-card-title>
+      <h4>Panel title</h4>
+    </mdb-card-title>
+    <mdb-card-text>Some quick example text to build on the card title and make up the bulk of the card's
+      content.</mdb-card-text>
+    <div class="flex-row">
+      <a class="card-link">Card link</a>
+      <a class="card-link">Another link</a>
+    </div>
+  </mdb-card-body>
+</mdb-card>
